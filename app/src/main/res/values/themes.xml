@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FullSazon" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+
+    <style name="Theme.FullSazon" parent="Base.Theme.FullSazon" />
+
+
+    <style name="InputStyle">
+        <item name="android:background">@drawable/style_input</item>
+        <item name="android:paddingVertical">10dp</item>
+        <item name="android:paddingHorizontal">40dp</item>
+        <item name="android:layout_marginHorizontal">70dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+</resources>

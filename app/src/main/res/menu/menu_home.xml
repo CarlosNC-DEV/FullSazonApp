@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Categorias" android:id="@+id/categorias" android:icon="@drawable/categorias_icon" />
+    <item android:title="Pedidos" android:id="@+id/pedidos" android:icon="@drawable/pedidos_icon"/>
+    <item android:title="Historial" android:id="@+id/historial" android:icon="@drawable/historial_icon"/>
+</menu>

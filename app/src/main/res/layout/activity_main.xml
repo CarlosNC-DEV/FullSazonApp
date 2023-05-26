@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFondo"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="170dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="118dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/correo_sesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/correo_sesion"
+        style="@style/InputStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="Ingresa tu correo"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/password_sesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/password_sesion"
+        style="@style/InputStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="Ingresa tu contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/checkRecuerdame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correo_sesion" />
+
+    <CheckBox
+        android:id="@+id/checkRecuerdame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:text="Recuerdame"
+        app:layout_constraintBottom_toTopOf="@+id/irregistro"
+        app:layout_constraintStart_toStartOf="@+id/password_sesion"
+        app:layout_constraintTop_toBottomOf="@+id/password_sesion" />
+
+    <TextView
+        android:id="@+id/irregistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="28dp"
+        android:text="¿No tientes cuenta? ¡Registrate!"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/iniciarSesion"
+        app:layout_constraintStart_toStartOf="@+id/checkRecuerdame"
+        app:layout_constraintTop_toBottomOf="@+id/checkRecuerdame" />
+
+    <Button
+        android:id="@+id/iniciarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="107dp"
+        android:text="Iniciar Sesión"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/irregistro"
+        app:layout_constraintTop_toBottomOf="@+id/irregistro" />
+</androidx.constraintlayout.widget.ConstraintLayout>

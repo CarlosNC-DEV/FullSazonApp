@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/colorFondo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imagen_pedido"
+                android:background="@color/black"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textSize="17dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Precio Unitario"/>
+
+
+                <TextView
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/precioUnitario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"/>
+
+                <TextView
+                    android:textSize="17dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Precio acumulado"/>
+
+
+                <TextView
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/precioAcumulado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"/>
+
+                <TextView
+                    android:textSize="17dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad"/>
+
+
+                <TextView
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/cantidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"/>
+                
+                <ImageView
+                    android:id="@+id/delete"
+                    android:layout_gravity="end"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/delete_icon"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
